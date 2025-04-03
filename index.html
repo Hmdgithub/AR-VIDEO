@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+  <script src="https://cdn.rawgit.com/jeromeetienne/ar.js/1.7.2/aframe/build/aframe-ar.min.js"></script>
+</head>
+<body style="margin: 0; overflow: hidden;">
+  <a-scene embedded arjs>
+    <!-- QR Code Marker -->
+    <a-marker type="pattern" url="pattern-marker.patt">
+      <!-- Video Element -->
+      <a-video src="https://drive.google.com/file/d/1bhEoUK7j31KSN8_1gKAN0LuA1axE9GES/view?usp=sharing" width="2" height="1" position="0 0 0"></a-video>
+    </a-marker>
+    <a-entity camera></a-entity>
+  </a-scene>
+</body>
+</html>
